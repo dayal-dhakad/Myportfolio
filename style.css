@@ -352,7 +352,7 @@ background: none;
 
 @media (max-width: 800px){
     .home{
-        background: url(g.jpg);
+        background: url("g.jpg");
         
     }
 }
