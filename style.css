@@ -5,18 +5,19 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
+    
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-
+    z-index: 999;
     font-family: 'ubuntu', sans-serif;
     padding: 15px 0;
     transition: all 0.3s ease;
-    background-color: #333;
+    background-color: crimson; 
 }
-
 
 
 
@@ -44,7 +45,9 @@
 
 .navbar .menu li a:hover {
 
-    color: crimson;
+    color: rgb(0, 0, 0);
+    font-size: 23px ;
+    
 
 
 }
@@ -55,25 +58,24 @@
 }
 
 .navbar .logo a {
-    color: #fff;
+    color: white;
     font-size: 35px;
     font-weight: 600;
 
 }
 
 .navbar .logo a span {
-    color: rgb(243, 193, 67);
+    color: #111;
+    font-weight: 900;
 }
 
 .home {
     display: flex;
 
-    background-image: url("https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&w=600");
-
+    background-image: url("/myphotoo.jpg");
     background-size: 100% 100%;
-
     height: 100vh;
-    color: black;
+    color: rgb(255, 255, 255);
     min-height: 500px;
     font-family: 'ubuntu', sans-serif;
 }
@@ -99,25 +101,165 @@
 }
 
 .home .home-content .text-3 span {
-    color: rgb(243, 193, 67);
-    font-weight: 500;
+    color: crimson;
+    font-weight: 800;
 }
 
-
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 30px;
+    margin-top: 20px ;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
 .menu-btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
+    
+}
+
+section{
+    padding: 100px 0;
+}
+
+.about{
+    font-family: 'Poppins' sans-serif;
+    
+
+}
+
+.about .title{
+    position: relative;
+    font-family: 'Ubuntu' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+
+}
+.about .title::after{
+    content: "who I am";
+    
+    font-size: 20px;
+    color: crimson;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
 }
 
 
-/* responsive media query */
+.about .about-content .left img{
+height: 350px;
+width: 350px;
+object-fit: cover;
+border-radius: 6px;
+}
 
-@media (max-width: 990px) {
+.about .about-content .right{
+    width: 55%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+.about .about-content .right span{
+    color: crimson;
+}
+
+.about .about-content .right a{ 
+display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 3px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+
+.about .about-content .right a:hover{ 
+color: #111;
+background: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media (max-width: 1104px) {
+.home .max-width{
+    margin-left: 0px;
+}
+}
+@media (max-width: 991px) {
+      .max-width{
+        padding: 0 50px;
+      }
+}
+
+@media (max-width: 947px) {
     .menu-btn {
         display: block;
         z-index: 999;
+
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
 
     }
 
@@ -137,6 +279,7 @@
         background: #111;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
     }
 
     .navbar .menu.active {
@@ -153,5 +296,63 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 65px;
+        
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+    }
+    
+    .home .home-content a{
+        
+        font-size: 23px;
+        padding: 10px 30px;
+     
+    }
+}
+@media (max-width: 690px) {
+    .home .home-content .text-2 {
+        font-size: 60px;
+        
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 32px;
+     
+    }
+    .max-width {
+
+        padding: 0 23px;
+
+    }
+    .home .home-content a{
+        
+        font-size: 20px;
+        padding: 8px 20px;
+     
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+        
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 27px;
+     
+    }
+    
+}
+
+@media (max-width: 800px){
+    .home{
+        background: url(/g.jpg);
+        
     }
 }
