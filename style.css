@@ -72,7 +72,7 @@
 .home {
     display: flex;
 
-    background-image: url("/myphotoo.jpg");
+    background-image: url("myphotoo.jpg");
     background-size: 100% 100%;
     height: 100vh;
     color: rgb(255, 255, 255);
@@ -437,9 +437,16 @@ section {
 
 }
 
+<<<<<<< HEAD
 @media (max-width: 800px) {
     .home {
         background: url(/g.jpg);
 
+=======
+@media (max-width: 800px){
+    .home{
+        background: url("g.jpg");
+        
+>>>>>>> 2a4a452cbd4dd369179752b55b0996decaea3fe0
     }
 }
