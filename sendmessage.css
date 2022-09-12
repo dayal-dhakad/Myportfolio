@@ -1,0 +1,19 @@
+.columnn p H2{
+    text-align: center;
+}
+
+.columnn .row{
+    font-size: 15px;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.columnn .row .info{
+    margin: 20px;
+    color: black;
+    margin-left: 20px;
+}
+
+.columnn .row i{
+    font-size: 30px;
+}
