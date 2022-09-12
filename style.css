@@ -74,7 +74,7 @@ html{
 .home {
     display: flex;
 
-    background-image: url("/myphotoo.jpg");
+    background-image: url("finale.jpg");
     background-size: 100% 100%;
     height: 100vh;
     color: rgb(255, 255, 255);
