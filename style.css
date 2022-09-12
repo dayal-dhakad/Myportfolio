@@ -11,7 +11,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 .navbar {
     position: fixed;
     width: 100%;
@@ -75,7 +74,7 @@ html{
 .home {
     display: flex;
 
-    background-image: url("homewall.jpg");
+    background-image: url("/myphotoo.jpg");
     background-size: 100% 100%;
     height: 100vh;
     color: rgb(255, 255, 255);
@@ -276,6 +275,136 @@ section {
     background: none;
 
 }
+
+
+.education .title{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    
+    padding-bottom: 20px;
+    margin-top: -35px;
+}
+
+
+.education .box-container{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    padding: 0rem 104px
+
+
+
+}
+
+.education .box-container .box{
+
+  width: 27rem;
+
+  margin: 4rem 1rem;
+
+  padding-left: 4rem;
+
+  border-left: 2rem solid crimson;
+
+  position: relative;
+
+}
+
+.education .box-container .box span{
+
+    font-size: 2opx;
+    background: rgb(100 72 72);
+    color: white;
+    border-radius: 5rem;
+    padding: 0.5rem 2.5rem;
+
+}
+
+.education .box-container .box h3{
+
+    font-size: 25px;
+    color: rgb(53, 1, 1);
+    padding: 6px 8px;
+    margin-top: 24px;
+    width: 150px;
+    border: 4px solid crimson;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+
+
+}
+
+.education .box-container .box p{
+
+    font-size: 1.4rem;
+
+    color: rgb(22, 30, 76);
+
+    padding: 1rem 0;
+
+}
+
+.education .box-container .box i{
+
+    position: absolute;
+
+    top: -1.5rem; left: -2.5rem;
+
+    height: 5rem;
+
+    width: 5rem;
+
+    border-radius: 50%;
+
+    line-height: 5rem;
+
+    text-align: center;
+
+    font-size: 3rem;
+
+    color: #111;
+
+    background: var(--yellow);
+
+    
+
+}
+
+.education .box-container .box p h2{
+
+    font-size: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
