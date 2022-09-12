@@ -18,7 +18,13 @@ backspeed: 60,
 loop: true,
 
 });
-
+var typed = new Typed(".typing-2",{
+  strings: ["Engineer...","Web Developer...", "Engineer..."],
+  typeSpeed: 100,
+  backspeed: 60,
+  loop: true,
+  
+  });
 });
 
 
