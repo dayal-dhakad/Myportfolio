@@ -11,7 +11,13 @@ $(document).ready(function(){
   $('.menu-btn i').toggleClass('active')
  });
 
+var typed = new Typed(".typing",{
+strings: ["Engineer...","Web Developer...", "Engineer..."],
+typeSpeed: 100,
+backspeed: 60,
+loop: true,
 
+});
 
 });
 
