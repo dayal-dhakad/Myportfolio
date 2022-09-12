@@ -12,7 +12,7 @@ $(document).ready(function(){
  });
 
 var typed = new Typed(".typing",{
-strings: ["Engineer...","Web Developer...", "Engineer..."],
+strings: ["Engineer...","Web Developer..."],
 typeSpeed: 100,
 backspeed: 60,
 loop: true,
