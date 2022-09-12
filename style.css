@@ -8,6 +8,9 @@
     scroll-behavior: smooth;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .navbar {
     position: fixed;
