@@ -707,31 +707,27 @@ section {
     height: 85px;
 }
 
-.contact .right form .button {
-    margin-top: 50px;
-    height: 48px;
-    width: 30%;
-}
-
-.contact .right form .button button {
-    height: 100%;
-    width: 100%;
-    border: 2px solid crimson;
+.contact .contact-content .right a {
+    display: inline-block;
     background: crimson;
     color: #fff;
-    font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
+    padding: 6px 30px;
+    margin-top: 38px;
     border-radius: 6px;
-    cursor: pointer;
-
-}
-
-.contact .right form .button button:hover {
-    background-color: #fff;
-    color: crimson;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
+    height: 48px;
+    width: 42%;
 
 }
+
+.contact .contact-content .right a:hover {
+    color: #111;
+    background: none;
+
+}
+
 
 .footer {
     background-color: #333;
