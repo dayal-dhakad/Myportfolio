@@ -11,6 +11,18 @@ $(document).ready(function(){
   $('.menu-btn i').toggleClass('active')
  });
 
+ $(window).on('scroll load',function(){
+
+  $('.navbar .menu').removeClass('active');
+
+  $('.menu-btn i').removeClass('active');
+
+});
+ 
+ 
+ 
+ 
+ 
 var typed = new Typed(".typing",{
 strings: ["Engineer...","Web Developer..."],
 typeSpeed: 100,
