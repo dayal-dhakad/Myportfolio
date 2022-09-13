@@ -708,17 +708,17 @@ section {
 }
 
 .contact .contact-content .right a {
-    display: inline-block;
+      display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 20px;
-    padding: 6px 30px;
-    margin-top: 38px;
+    font-size: 15px;
+    padding: 0px 23px;
+    margin-top: 37px;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
-    height: 48px;
-    width: 42%;
+    height: 26px;
+    width: 21%;
 
 }
 
