@@ -24,14 +24,14 @@ $(document).ready(function(){
  
  
 var typed = new Typed(".typing",{
-strings: ["Engineer...","Web Developer..."],
+strings: ["Engineer...","Engineer..."],
 typeSpeed: 100,
 backspeed: 60,
 loop: true,
 
 });
 var typed = new Typed(".typing-2",{
-  strings: ["Engineer...","Web Developer...", "Engineer..."],
+  strings: ["Engineer...","Engineer..."],
   typeSpeed: 100,
   backspeed: 60,
   loop: true,
