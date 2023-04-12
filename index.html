@@ -14,6 +14,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
     <title>Portfolio Website</title>
 </head>
 
@@ -314,23 +317,28 @@ I’ve always been passionate about learning new things, whether reading a book 
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="" id="myform">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name">
+                                <input type="text" id="name" placeholder="Name">
                             </div>
                             <div class="field Email">
-                                <input type="email" placeholder="Email">
+                                <input type="email" id="email" placeholder="Email">
                             </div>
                         </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject">
+                        <!---     <div class="field">
+                                <input type="text" id="subject" placeholder="Subject">
                             </div>
                             <div class="field textarea">
                                 <textarea cols="30" rows="10" placeholder="Describe...."></textarea>
-                            </div>
-                            <div class="button">
-                                <a href="#" target="_blank">Send</a>
+                            </div>  
+
+                            <div class="field textarea">
+                                <textarea name="" id="textareaa" cols="10" rows="10" placeholder="Type Your Message Here"></textarea>
+                            </div> -->
+                            <div >
+                                <button type ="submit" class="buttoon" >Submit</button>
+                               
                             </div>
 
                         
@@ -348,8 +356,53 @@ I’ve always been passionate about learning new things, whether reading a book 
 
 
     <script src="script.js"></script>
+    
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+  
+  <script>
+   const firebaseConfig = {
+  apiKey: "AIzaSyAVj0Uxhf7eQSqfQzxPADaCllIkTmg8jTQ",
+  authDomain: "my-portfolio-website-9310b.firebaseapp.com",
+  databaseURL: "https://my-portfolio-website-9310b-default-rtdb.firebaseio.com",
+  projectId: "my-portfolio-website-9310b",
+  storageBucket: "my-portfolio-website-9310b.appspot.com",
+  messagingSenderId: "376903721430",
+  appId: "1:376903721430:web:05b3d1582aed5c1a1a4477"
+};
+  
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+    <script>
+        var form = document.getElementById("myForm");
+      
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          // code to handle form submission goes here
+        });
+      
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    var name = form.elements["name"].value;
+    var email = form.elements["email"].value;
+    var message = form.elements["message"].value;
+    
+    firebase.database().ref("contacts").push({
+      name: name,
+      email: email,
+      message: message
+    });
+    
+    // reset the form
+    form.reset();
+  });
+  
+</>
 
 
+  
 </body>
 
 </html>
